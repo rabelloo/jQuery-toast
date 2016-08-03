@@ -27,3 +27,5 @@ The `options` parameter has 4 properties, which are equal to the other parameter
 ## Mobile friendly
 Hammer.js is automatically supported, just like in Materialize!<br>
 All you need to do is add Hammer.js to your project before toast.js and you will be able to "pan" and "swipe" every toast.
+
+Toast display is automatically changed between screen sizes to reflect each device's standard. That's what the css is for :D
