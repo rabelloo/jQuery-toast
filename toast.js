@@ -5,14 +5,14 @@
     Version: 1.0.0
 */
 
-;function toast(optionsOrMessage, displayLength, className, completeCallback) {
+;function toast(message, duration, className, completeCallback) {
     // Settings
     var settings = $.extend({
-        message:            optionsOrMessage    || '',
-        displayLength:      displayLength       || 5000,
+        message:            message             || '',
+        displayLength:      duration            || 5000,
         className:          className           || '',
         completeCallback:   completeCallback    || $.noop
-    }, optionsOrMessage);
+    }, $.isPlainObject(message) ? message : {});
 
     // Get container
     var $container = $('#toast-container');
